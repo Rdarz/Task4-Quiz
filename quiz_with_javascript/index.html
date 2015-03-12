@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="quiz.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+<div id="result" style="color:white"></div>
+<div id="q_set1" class="wrapper">
+<label class="qstn" >1. What is 1............ ? </label><br>
+
+<label><input type="radio" name="value" class="radio" value="ans1"> ans1</label>
+<label><input type="radio" name="value" class="radio" value="2"> 2</label>
+<label><input type="radio" name="value" class="radio" value="3"> 3</label>
+<label><input type="radio" name="value" class="radio" value="4" > 4</label>
+
+<input type="button" name="Submit" class="next" value="Next" id="bc" onclick="next_click(this)">
+<input type="button" name="Submit" class="prev" value="previous" >
+</div>
+<div id="q_set2" class="wrapper">
+<label class="qstn" >2. What is 2............ ? </label><br>
+
+<label><input type="radio" name="value" class="radio" value="1"> 1</label>
+<label><input type="radio" name="value" class="radio" value="ans2"> ans2</label>
+<label><input type="radio" name="value" class="radio" value="3"> 3</label>
+<label><input type="radio" name="value" class="radio" value="4" > 4</label>
+
+<input type="button" name="Submit" class="next" value="Next" id="bc" onclick="next_click(this)">
+<input type="button" name="Submit" class="prev" value="previous" onclick="prev(this)">
+</div>
+<div id="q_set3" class="wrapper">
+<label class="qstn" >3. What is 3............ ? </label><br>
+
+<label><input type="radio" name="value" class="radio" value="1"> 1</label>
+<label><input type="radio" name="value" class="radio" value="2"> 2</label>
+<label><input type="radio" name="value" class="radio" value="ans3"> ans3</label>
+<label><input type="radio" name="value" class="radio" value="4" > 4</label>
+
+<input type="button" name="Submit" class="next" value="Next" id="bc" onclick="next_click(this)">
+<input type="button" name="Submit" class="prev" value="previous" onclick="prev(this)">
+</div>
+<div id="q_set4" class="wrapper">
+<label class="qstn" >4. What is 4............ ? </label><br>
+
+<label><input type="radio" name="value" class="radio" value="1"> 1</label>
+<label><input type="radio" name="value" class="radio" value="2"> 2</label>
+<label><input type="radio" name="value" class="radio" value="3"> 3</label>
+<label><input type="radio" name="value" class="radio" value="ans4" > ans4</label>
+
+<input type="button" name="Submit" class="next" value="Next" id="bc" onclick="next_click(this)">
+<input type="button" name="Submit" class="prev" value="previous" onclick="prev(this)">
+</div>
+<div id="q_set5" class="wrapper">
+<label class="qstn" >5. What is 5............ ? </label><br>
+
+<label><input type="radio" name="value" class="radio" value="ans5"> ans5</label>
+<label><input type="radio" name="value" class="radio" value="2"> 2</label>
+<label><input type="radio" name="value" class="radio" value="3"> 3</label>
+<label><input type="radio" name="value" class="radio" value="4" > 4</label>
+
+<input type="button" name="Submit" class="next" value="Next" id="bc" onclick="next_click(this)">
+<input type="button" name="Submit" class="prev" value="previous" onclick="prev(this)">
+</div>
+<div id="q_set6" class="wrapper">
+<label class="qstn" >6. What is 6............ ? </label><br>
+
+<label><input type="radio" name="value" class="radio" value="1"> 1</label>
+<label><input type="radio" name="value" class="radio" value="ans6"> ans6</label>
+<label><input type="radio" name="value" class="radio" value="3"> 3</label>
+<label><input type="radio" name="value" class="radio" value="4" > 4</label>
+
+<input type="button" name="Submit" class="next" value="Next" id="bc" onclick="next_click(this)">
+<input type="button" name="Submit" class="prev" value="previous" onclick="prev(this)">
+</div>
+
+<div id="q_set7" class="wrapper">
+<label class="qstn" >7. What is 7............ ? </label><br>
+
+<label><input type="radio" name="value" class="radio" value="1"> 1</label>
+<label><input type="radio" name="value" class="radio" value="2"> 2</label>
+<label><input type="radio" name="value" class="radio" value="ans7"> ans7</label>
+<label><input type="radio" name="value" class="radio" value="4" > 4</label>
+
+<input type="button" name="Submit" class="next" value="Next" id="bc" onclick="next_click(this)">
+<input type="button" name="Submit" class="prev" value="previous" onclick="prev(this)">
+</div>
+<div id="q_set8" class="wrapper">
+<label class="qstn" >8. What is 8............ ? </label><br>
+
+<label><input type="radio" name="value" class="radio" value="1"> 1</label>
+<label><input type="radio" name="value" class="radio" value="2"> 2</label>
+<label><input type="radio" name="value" class="radio" value="3"> 3</label>
+<label><input type="radio" name="value" class="radio" value="ans8" > ans8</label>
+
+<input type="button" name="Submit" class="next" value="Next" id="bc" onclick="next_click(this)">
+<input type="button" name="Submit" class="prev" value="previous" onclick="prev(this)">
+</div>
+<div id="q_set9" class="wrapper">
+<label class="qstn" >9. What is 9............ ? </label><br>
+
+<label><input type="radio" name="value" class="radio" value="ans9"> ans9</label>
+<label><input type="radio" name="value" class="radio" value="2"> 2</label>
+<label><input type="radio" name="value" class="radio" value="3"> 3</label>
+<label><input type="radio" name="value" class="radio" value="4" > 4</label>
+
+<input type="button" name="Submit" class="next" value="Next" id="bc" onclick="next_click(this)">
+<input type="button" name="Submit" class="prev" value="previous" onclick="prev(this)">
+</div>
+
+<div id="q_set10" class="wrapper">
+<label class="qstn" >10. What is 10............ ? </label><br>
+
+<label><input type="radio" name="value" class="radio" value="1"> 1</label>
+<label><input type="radio" name="value" class="radio" value="ans10"> ans10</label>
+<label><input type="radio" name="value" class="radio" value="3"> 3</label>
+<label><input type="radio" name="value" class="radio" value="4" > 4</label>
+
+<input type="button" name="Submit" class="next" value="Next" id="bc" onclick="result()">
+<input type="button" name="Submit" class="prev" value="previous" onclick="prev(this)">
+</div>
+
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+<!-- 
+ -->
